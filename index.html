@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignalR Test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="login">
+    <p>Zaloguj się podając token JWT: </p>
+    <input type="text" id="loginInput" />
+    <button id="loginButton">login</button>
+  </div>
+  <div id="app">
+    <div id="jointChat">
+      <p>Dołącz do czatu o Id: </p>
+      <input type="text" id="chatIdInput" />
+      <button id="joinChatButton">Join</button>
+    </div>
+    <div id="disconnectChat">
+      <p id="disconnectChatText">Naciśnij aby odłączyć się z chatu o id: </p>
+      <button id="disconnectChatButton">Disconnect</button>
+    </div>
+    <div id="chatContainer">
+      <p>Content: </p>
+      <input type="text" id="messageInput" />
+      <button id="sendButton">Send</button>
+    </div>
+    <div id="messagesList">
+      <!-- Tutaj będą wyświetlane wiadomości -->
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
